@@ -1,0 +1,9 @@
+Flask==1.0.2
+applicationinsights
+setuptools
+requests
+numpy
+imutils
+werkzeug
+matplotlib
+scikit-image

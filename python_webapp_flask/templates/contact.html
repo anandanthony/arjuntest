@@ -1,0 +1,38 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    {% if images %}
+        <table>
+            <tbody>
+                <tr>
+                    {% for name, image in images.items() %}
+                        <td align='center'>{{ name }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for name, image in images.items() %}
+                        <td ><img src="{{ image }}" alt="{{ name }}" width="600px"></td>
+                    {% endfor %}
+                </tr>
+
+                <tr>
+                    {% for name, image in diffs.items() %}
+                        <td align='center'>{{ name }}</td>
+                    {% endfor %}
+                </tr>
+
+                <tr align='center'>
+                    {% for name, image in diffs.items() %}
+                        <td><img src="{{ image }}" alt="{{ name }}" width="600px"></td>
+                    {% endfor %}
+                </tr>
+
+            </tbody>
+        </table>
+    {% else %}
+        No results :(
+    {% endif %}
+</body>
+</html>
