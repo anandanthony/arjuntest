@@ -4,7 +4,7 @@ LABEL maintainer="Azure App Service Container Images <appsvc-images@microsoft.co
 RUN apt-get update -y
 RUN apt-get install -y python-pip python-dev build-essential
 #lines customer removed to resolve the issue
-RUN apt-get install build-essential cmake pkg-config
+RUN apt-get install -y build-essential cmake pkg-config
 RUN apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
 RUN apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 RUN apt-get install libxvidcore-dev libx264-dev
