@@ -9,7 +9,6 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN apt-get update
 #lines customer removed to resolve the issue
-RUN apt-get upgrade
 RUN apt-get install build-essential cmake pkg-config
 RUN apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
 RUN apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
